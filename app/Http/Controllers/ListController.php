@@ -30,9 +30,7 @@ class ListController extends Controller
             Person::where('id', $request->id)->update( $form); 
             return redirect('/');
     }
-    public function good(){
-        return view('study');
-    }
+  
  }
 
    
