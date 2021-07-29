@@ -27,7 +27,7 @@ class ListController extends Controller
         
     public function update(Request $request){
         $form=$request->list;
-            Person::where('id', $request->id)->update( $form); 
+            Person::find($request->id)->update( $form); 
             return redirect('/');
     }
   
